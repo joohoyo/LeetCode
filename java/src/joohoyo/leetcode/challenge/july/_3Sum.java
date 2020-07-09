@@ -4,7 +4,7 @@ package joohoyo.leetcode.challenge.july;
 // https://leetcode.com/explore/challenge/card/july-leetcoding-challenge/545/week-2-july-8th-july-14th/3384/
 // 16:50 ~ 17:50 (60mins)
 
-import joohoyo.leetcode.helper.Assertions;
+import joohoyo.leetcode.helper.AssertionUtils;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -20,7 +20,7 @@ public class _3Sum {
         expected.add(Arrays.asList(-1, 0, 1));
         expected.add(Arrays.asList(-1, -1, 2));
 
-        Assertions.assertDoubleListEquals(expected, s.threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
+        AssertionUtils.assertDoubleListEquals(expected, s.threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
     }
 
     @Test
@@ -30,7 +30,7 @@ public class _3Sum {
         List<List<Integer>> expected = new ArrayList<>();
         expected.add(Arrays.asList(-2, 0, 2));
 
-        Assertions.assertDoubleListEquals(expected, s.threeSum(new int[]{-2, 0, 0, 2, 2}));
+        AssertionUtils.assertDoubleListEquals(expected, s.threeSum(new int[]{-2, 0, 0, 2, 2}));
     }
 
     class Solution {
